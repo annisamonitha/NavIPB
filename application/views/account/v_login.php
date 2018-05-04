@@ -4,11 +4,11 @@
  <head>
 	 <meta charset="UTF-8">
 	 <title>
-		 Halaman Login | Tutorial Simple Login Register CodeIgniter @ http://recodeku.blogspot.com
+		Halaman Login | NavIPB
 	 </title>
  </head>
  <body>
-			<h2>Halaman Login</h2>
+			<h2>Login Akun</h2>
 			<?php
 	 // Cetak jika ada notifikasi
 			if($this->session->flashdata('sukses')) {

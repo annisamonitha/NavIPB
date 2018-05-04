@@ -1,13 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>
-	Beranda | Tutorial Simple Login Register CodeIgniter @ http://recodeku.blogspot.com
+	Beranda | NavIPB
 	</title>
 </head>
+
 <body>
 	<h1>Selamat Datang di Situs kami.</h1>
 	<p>  

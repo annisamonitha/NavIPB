@@ -4,7 +4,7 @@
  <head>
    <meta charset="UTF-8">
    <title>
-	Pendaftaran Akun | Tutorial Simple Login Register CodeIgniter @ http://recodeku.blogspot.com
+	Pendaftaran Akun | NavIPB
    </title>
  </head>
  <body>
