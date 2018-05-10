@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		background-image: url('https://images.wallpaperscraft.com/image/new_york_empire_state_building_manhattan_58978_1280x720.jpg');
+		background-image: url('https://images.wallpaperscraft.com/image/travel_map_tenderness_boat_86057_1280x720.jpg');
 		background-size: cover;
 	}
 
@@ -75,13 +75,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		text-align: center;
 		position: absolute;
 		top: 10%;
-		left: 32%;
+		left: 30%;
 	}
 
 	.header h1 {
-		color: #fff;
+		color: #DC143C ;
 		font-family: impact; 
 		font-size: 130px;
+		margin: 30px;
+  		background-color: #FFE4C4 ;
+  		opacity: 0.6;
+  		filter: alpha(opacity=60);
 	}
 
 	</style>
