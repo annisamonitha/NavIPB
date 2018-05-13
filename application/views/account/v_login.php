@@ -36,7 +36,10 @@
 			<?php echo form_close();?>
  
 			<p>
-					 Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?>
+					 Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini...'); ?>
+			</p>
+			<p>
+				Belum memiliki akun? Silahkan klik <?php echo anchor(site_url().'/register','di sini...');?>
 			</p>
  </body>
  </html>
