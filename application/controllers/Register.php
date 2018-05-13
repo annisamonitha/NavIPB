@@ -28,7 +28,7 @@ class Register extends CI_Controller {
  
 			$this->m_account->daftar($data);
 			 
-			$pesan['message'] =    "Pendaftaran berhasil";
+			$pesan['message'] = "Pendaftaran berhasil";
 			 
 			$this->load->view('account/v_success',$pesan);
 		}

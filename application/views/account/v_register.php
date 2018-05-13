@@ -17,10 +17,11 @@
  </head>
 
  	<h1> NavIPB </h1>  
- 	<div class="form">
+ 	<div class="body">
 
  	<h2> Sign Up </h2>
- <form>
+ <body>
+
 	<?php echo form_open('register');?>
 	<p>Nama :</p>
 	<input type="text" name="name" value="<?php echo set_value('name'); ?>" placeholder="Enter Your Name"/>
@@ -38,13 +39,13 @@
 	<input type="password" name="password_conf" value="<?php echo set_value('password_conf'); ?>" placeholder="Enter Your Password"/>
 	<?php echo form_error('password_conf'); ?>
 	<h4>
-	<input type="submit" name="btnSubmit" value="Daftar" class="btn btn-warning btn-lg btn-block"/>
+	<input type="submit" name="btnSubmit" value="Submit" class="btn btn-success btn-lg btn-block"/>
 	<?php echo form_close();?>
  	</h4>
 	<h3>
-	Kembali ke halamn awal? Silahkan klik <?php echo anchor(site_url().'/beranda','di sini'); ?>
+	Kembali ke halaman awal? Silahkan klik <?php echo anchor(site_url().'/beranda','di sini'); ?>
 	</h3>
-</form>
+</body>
 
  <style>
 	html {
@@ -59,19 +60,20 @@
   	h1 {
   		position: absolute;
   		font-family: georgia;
-  		font-size: 110px;
-  		left: 20%;
-  		top: 30px;
-  		color:  #FFEFD5;
-  		border: 15px solid  #FFEFD5 ;
-  		background:rgba(0,0,0,0.4);
+  		font-size: 50px;
+  		left: 3%;
+  		top: 3px;
+  		color: #FAEBD7 ;
+  		border: 5px solid #FAEBD7 ;
+  		background:rgba(0,0,0,0.2);
+      border-radius: 10px;
   	}
 
-    .form { 
-
-       	width: 400px; 
+    .body { 
+       	width: 420px; 
+        height: 780px;
         background: black; 
-        padding: 40px 20px; 
+        padding: 25px 35px; 
         position: fixed; 
         left: 83%;  
         top: 50%; 
@@ -81,20 +83,20 @@
 		    border-width: 3px;
         border-width: 3px;
         background:rgba(0,0,0,0.8);
-        border-radius: 25px;
+        border-radius: 20px;
         }
 
-    .form h2 {
+    .body h2 {
      	text-align: center; 
      	color: #fff; 
      	font-size: 35px;
      	font-family: impact;
      	font-weight: normal; 
-     	margin-bottom: 20px;
+     	margin-bottom: 30px;
      	margin-top: 0px;
      }
         
-    .form input {
+    .body input {
     	width: 100%; 
     	background: none; 
     	border: 1px solid #fff; 
@@ -106,18 +108,19 @@
     	color: #fff;
     }
         
-    input[type="button"] { 
-    	background:  #CD853F; 
+    input[type="submit"] { 
+    	background:  #800000; 
     }
    	
-   	p{
+   	p {
    		color:white;
    		font-size: 15px;
+      font-family: courier;
    	}
 
    	h3 {
-    	font-family: comic sans;
-    	font-size: 18px;
+    	font-family: georgia;
+    	font-size: 16px;
     	color: white;
     	margin-top: 8%;
     }
@@ -127,6 +130,4 @@
     }
 
 </style>
-</form>
-
  </html>
