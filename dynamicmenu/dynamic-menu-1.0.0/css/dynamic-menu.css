@@ -1,0 +1,154 @@
+#choose_navbar_position{
+	//display:inline-block;
+	//width:100px;
+}
+
+ol.nav li, ol.nav li a{
+	cursor: pointer; 
+}
+ol.nav .divider-vertical {
+	cursor: default; 
+}
+/* top menu */
+ol.nav li.dragged {
+	//display:none;
+	background-color: #2c2c2c; 
+}
+/* dropdown */
+ol.nav .dropdown-menu li.dragged {
+	display:none; 
+}  
+ol.nav li.placeholder {
+	position: relative; 
+}
+ol.nav li.placeholder:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: red;
+    top: -1px;
+    margin-left: -5px;
+    border-bottom: none; 
+}
+ol.nav ol.dropdown-menu li.placeholder:before {
+	border: 5px solid transparent;
+	border-left-color: red;
+	margin-top: -5px;
+	margin-left: none;
+	top: 0;
+	left: 10px;
+	border-right: none; 
+}
+body.dragging, body.dragging * {
+	cursor: move !important; 
+}
+.dragged {
+	top: 0;
+	opacity: 0.5;
+	z-index: 2000; 
+} 
+.table_submenu{
+	float:right;
+	width:96%;
+	display:none;
+}
+.tb_submenu{
+	color: #2ACCCE;
+}
+.tambah_submenu{
+    font-size: 30px;
+    color: green;
+	cursor:pointer;
+}
+.kurang_submenu{
+    font-size: 30px;
+    color: red;
+	cursor:pointer;
+}
+
+
+/**** RIGHT MENU **/
+.custom-menu {
+	list-style-type: none;
+	padding-left:0px;
+    display: none;
+    z-index: 4000;
+	font-size: 11px;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+}
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.custom-menu li:hover {
+    background-color: #DEF;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	width: auto;
+}
+
+/** custom CSS navbar**/
+.navbar{
+	border-radius: 4px!Important;
+}
+.navbar-fixed-top{
+	position: absolute;
+}
+.navbar-default{
+	border:0px;
+	border-bottom: 1px solid transparent;
+}
+.navbar-default > .container > .navbar-collapse{
+	margin-left: -15px !Important;
+	margin-right: -15px !Important;
+}
+.navbar-header.navbar-left{
+	margin-right: 0px !Important;
+	margin-left: 0px !Important;
+}
+.navbar-header.navbar-left > .navbar-brand{
+	margin-left: -15px !Important;
+}
+.navbar-header.navbar-right{
+	margin-left: 15px !Important;
+}
+.navbar-header.navbar-right > .navbar-brand{
+	margin-left: 0px !Important;
+}			
+
+/** fixed navbar when scrolldown */
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.affixed{
+    position:fixed;
+    top:50px;
+}
+.navbar-fixed-top{
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 95%;
+}
+
+/** modal bootstrap **/
+#createMenuModal, #titleWebsiteModal{
+	z-index: 5000;
+}
