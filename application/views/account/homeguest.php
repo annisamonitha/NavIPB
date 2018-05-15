@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Beranda | NavIPB</title>
+    <title>Home | NavIPB</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/beranda/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
@@ -40,16 +40,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('homeguest','Beranda');?></a>
+              <a class="nav-link" href="#"><?php echo anchor('homeguest','Home');?></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('','Peta');?></a>
+              <a class="nav-link" href="#"><?php echo anchor('','Maps');?></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('login','Jadwal');?></a>
+              <a class="nav-link" href="#"><?php echo anchor('login','Schedule');?></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('login','Sign In');?></a>
+              <a class="nav-link" href="#"><?php echo anchor('login','Log In');?></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><?php echo anchor('register','Sign Up');?></a>
@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </header>
 
-    
+
     <!-- Footer -->
     <footer>
       <div class="container">

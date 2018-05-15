@@ -1,6 +1,6 @@
 <?php
  defined('BASEPATH') OR exit('No direct script access allowed');
- ?><!DOCTYPE html>  
+ ?><!DOCTYPE html>
  <head>
    <meta charset="UTF-8">
    <title> Pendaftaran Akun | NavIPB </title>
@@ -8,15 +8,15 @@
    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ;?>">
 
 	<script src="<?php echo base_url('assets/jquery/jquery-3.3.1.min.js') ;?>"></script>
-	
+
 	<script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js') ;?>"></script>
-	
+
 	<script src="<?php echo base_url('assets/datatables/js/jquery.dataTables.min.js') ;?>"></script>
-	
+
 	<script src="<?php echo base_url('assets/datatables/js/dataTables.bootstrap.js') ;?>"></script>
  </head>
 
- 	<h1> NavIPB </h1>  
+ 	<h1> NavIPB </h1>
  	<div class="body">
 
  	<h2> Sign Up </h2>
@@ -26,24 +26,30 @@
 	<p>Nama :</p>
 	<input type="text" name="name" value="<?php echo set_value('name'); ?>" placeholder="Enter Your Name"/>
 	<?php echo form_error('name'); ?> </p>
+
 	<p>Username :</p>
-	<input type="text" name="username" value="<?php echo set_value('username'); ?>" placeholder="Enter Your Username"/> 
+	<input type="text" name="username" value="<?php echo set_value('username'); ?>" placeholder="Enter Your Username"/>
 	<?php echo form_error('username'); ?> </p>
+
 	<p>Email :</p>
 	<input type="text" name="email" value="<?php echo set_value('email'); ?>" placeholder="Enter Your Email"/>
 	<?php echo form_error('email'); ?> </p>
+
  	<p>Password :</p>
 	<input type="password" name="password" value="<?php echo set_value('password'); ?>" placeholder="Enter Your Password"/>
 	<?php echo form_error('password'); ?> </p>
+
 	<p>Confirm Password  :</p>
 	<input type="password" name="password_conf" value="<?php echo set_value('password_conf'); ?>" placeholder="Enter Your Password"/>
 	<?php echo form_error('password_conf'); ?>
+
 	<h4>
 	<input type="submit" name="btnSubmit" value="Submit" class="btn btn-success btn-lg btn-block"/>
 	<?php echo form_close();?>
  	</h4>
+  
 	<h3>
-	Kembali ke halaman awal? Silahkan klik <?php echo anchor(site_url().'/beranda','di sini'); ?>
+	Back to <?php echo anchor(site_url().'/beranda','Home'); ?>
 	</h3>
 </body>
 
@@ -69,14 +75,14 @@
       border-radius: 10px;
   	}
 
-    .body { 
-       	width: 420px; 
+    .body {
+       	width: 420px;
         height: 780px;
-        background: black; 
-        padding: 25px 35px; 
-        position: fixed; 
-        left: 83%;  
-        top: 50%; 
+        background: black;
+        padding: 25px 35px;
+        position: fixed;
+        left: 83%;
+        top: 50%;
         transform: translate(-50%, -50%);
         border-style:solid;
         border-color: white;
@@ -87,31 +93,31 @@
         }
 
     .body h2 {
-     	text-align: center; 
-     	color: #fff; 
+     	text-align: center;
+     	color: #fff;
      	font-size: 35px;
      	font-family: impact;
-     	font-weight: normal; 
+     	font-weight: normal;
      	margin-bottom: 30px;
      	margin-top: 0px;
      }
-        
+
     .body input {
-    	width: 100%; 
-    	background: none; 
-    	border: 1px solid #fff; 
-    	border-radius: 3px; 
-    	padding: 6px 15px; 
-    	box-sizing: border-box; 
-    	margin-bottom: 20px; 
-    	font-size: 16px; 
+    	width: 100%;
+    	background: none;
+    	border: 1px solid #fff;
+    	border-radius: 3px;
+    	padding: 6px 15px;
+    	box-sizing: border-box;
+    	margin-bottom: 20px;
+    	font-size: 16px;
     	color: #fff;
     }
-        
-    input[type="submit"] { 
-    	background:  #800000; 
+
+    input[type="submit"] {
+    	background:  #800000;
     }
-   	
+
    	p {
    		color:white;
    		font-size: 15px;

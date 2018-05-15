@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('<?php echo base_url('assets/beranda/img/home-bg.jpg')?>')">
+    <header class="masthead" style="background-image: url('<?php echo base_url('assets/beranda/img/foto_beranda.png')?>')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -99,7 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+            <p class="copyright text-muted">Copyright &copy; Ilmu Komputer IPB 2018</p>
           </div>
         </div>
       </div>
