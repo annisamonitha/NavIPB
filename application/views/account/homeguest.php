@@ -2,123 +2,95 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-  <head>
+<head>
+  <title>Home | NevIPB</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/linearicons/style.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/chartist/css/chartist-custom.css');?>">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/css/main.css');?>">
+  <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/css/demo.css');?>">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/klorofill/assets/img/apple-icon.png');?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/klorofill/assets/img/favicon.png');?>">
+</head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Home | NavIPB</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url('assets/beranda/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="<?php echo base_url('assets/beranda/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="<?php echo base_url('assets/beranda/css/clean-blog.min.css')?>" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">NavIPB</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('homeguest','Home');?></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('','Maps');?></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('login','Schedule');?></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('login','Log In');?></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('register','Sign Up');?></a>
+<body>
+  <!-- WRAPPER -->
+  <div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="brand">
+        <a href="#">NavIPB</a>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-btn">
+          <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+        </div>
+        <form class="navbar-form navbar-left">
+          <div class="input-group">
+            <input type="text" value="" class="form-control" placeholder="Search...">
+            <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+          </div>
+        </form>
+        <div id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span><?php echo anchor('login','Log In');?></span></a></li>
+                <li><a href="#"><span><?php echo anchor('register','Sign Up');?></span></a></li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('<?php echo base_url('assets/beranda/img/home-bg.jpg')?>')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>NavIPB</h1>
-              <span class="subheading">Navigation for IPB Netizen</span>
-            </div>
-          </div>
-        </div>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+      <div class="sidebar-scroll">
+        <nav>
+          <ul class="nav">
+            <li><a href="#" class="active"><?php echo anchor('homeguest','<i class="lnr lnr-home"></i><span>Home</span>');?></a></li>
+            <li><a href="#" class=""><?php echo anchor('','<i class="lnr lnr-map"></i><span>Maps</span>');?></a></li>
+            <li><a href="#" class=""><?php echo anchor('login','<i class="lnr lnr-list"></i><span>Schedule</span>');?></a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
-
-
-    <!-- Footer -->
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+      
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
-          </div>
-        </div>
+      <div class="container-fluid">
+        <p class="copyright">&copy; 2018. NavIPB</p>
       </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo base_url('assets/beranda/vendor/jquery/jquery.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/beranda/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="<?php echo base_url('assets/beranda/js/clean-blog.min.js')?>"></script>
-
-  </body>
+  </div>
+  <!-- END WRAPPER -->
+  <!-- Javascript -->
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery/jquery.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/chartist/js/chartist.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/scripts/klorofil-common.js');?>"></script>
+</body>
 
 </html>
