@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Maps extends CI_Controller {
+class Ipb1 extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('account/maps');
+		$this->load->view('account/ipb1');
 	}
 }

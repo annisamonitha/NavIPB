@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Maps | NavIPB</title>
   <meta charset="utf-8">
@@ -48,8 +49,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><span><?php echo anchor('login','Log In');?></span></a></li>
-                <li><a href="#"><span><?php echo anchor('register','Sign Up');?></span></a></li>
+                <li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
+                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
               </ul>
             </li>
           </ul>
@@ -63,59 +64,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav>
           <ul class="nav">
             <li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
-            <li><a href="<?php echo ('maps');?>" class="active"><i class="lnr lnr-map"></i> <span>Maps</span></a></li>
+            <li>
+              <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+              <div id="subPages" class="collapse ">
+                <ul class="nav">
+                  <li>
+                    <a href="<?php echo ('ipb1');?>" class="">
+                      <h4> IPB 1 </h4>
+                      <p><h6> FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA </h6></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo ('ipb2');?>" class="">
+                      <h4> IPB 2 </h4>
+                      <p><h6> FKH - FPIK - FAPET - FMIPA Baru - FEM Baru </h6></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo ('ipb3');?>" class="">
+                      <h4> IPB 3 </h4>
+                      <p><h6> CCR - TL </h6></p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
           </ul>
         </nav>
       </div>
     </div>
     <!-- END LEFT SIDEBAR -->
-		<!-- MAIN -->
-		<div class="main">
-			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					<h3 class="page-title">Maps</h3>
-					<div class="row">
-						<div class="col-md-6">
-							<!-- IPB 1 -->
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">IPB 1</h3>
-									<span>FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA</span>
-									<div class="text-center"><a href="#" class="btn btn-primary">Go</a></div>
-								</div>
-							</div>
-							<!-- END IPB 1 -->
-							<!-- IPB 2 -->
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">IPB 2</h3>
-									<span>FKH - FPIK - FAPET - FMIPA Baru - FEM Baru</span>
-									<div class="text-center"><a href="#" class="btn btn-primary">Go</a></div>
-								</div>
-							</div>
-							<!-- END IPB 2 -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END MAIN CONTENT -->
-		</div>
-		<!-- END MAIN -->
-		<div class="clearfix"></div>
+    <!-- MAIN -->
+    <div class="main">
+      
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
     <footer>
       <div class="container-fluid">
         <p class="copyright">&copy; 2018. NavIPB</p>
       </div>
     </footer>
   </div>
-	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery/jquery.min.js');?>"></script>
-	<script src="<?php echo base_url('assets/klorofill/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
-	<script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');?>"></script>
-	<script src="<?php echo base_url('assets/klorofill/assets/scripts/klorofil-common.js');?>"></script>
+  <!-- END WRAPPER -->
+  <!-- Javascript -->
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery/jquery.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/vendor/chartist/js/chartist.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/klorofill/assets/scripts/klorofil-common.js');?>"></script>
 </body>
 
 </html>

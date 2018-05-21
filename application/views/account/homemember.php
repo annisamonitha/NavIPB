@@ -47,10 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('login');?>"><i class="lnr lnr-sign-in"></i><span>Log In</span></a></li>
-                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
+                <li><a href="<?php echo ('profile');?>"><i class="lnr lnr-user"></i><span>My Profile</span></a></li>
+                <li><a href="<?php echo ('');?>"><i class="lnr lnr-exit"></i><span>Sign Out</span></a></li>
               </ul>
             </li>
           </ul>
@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </ul>
               </div>
             </li>
-            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
           </ul>
         </nav>
       </div>

@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-  <title>Home | NavIPB</title>
+  <title>Maps | NavIPB</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('login');?>"><i class="lnr lnr-sign-in"></i><span>Log In</span></a></li>
+                <li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
                 <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
               </ul>
             </li>
@@ -63,9 +63,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('homeguest');?>" class="active"><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
-              <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+              <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
                 <ul class="nav">
                   <li>
