@@ -49,91 +49,92 @@
  	</h4>
   
 	<h3>
-	Back to <?php echo anchor(site_url().'/beranda','Home'); ?>
-	</h3>
+  Back to Front Page click <?php echo anchor(site_url().'/beranda','Here'); ?>
+  </h3>
 </body>
 
  <style>
-	html {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		position: absolute;
-		background-image: url('https://images.wallpaperscraft.com/image/globe_map_ball_109861_1280x720.jpg');
-		background-size: cover;
-	}
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    background-image: url('http://www.halhalal.com/wp-content/uploads/2016/02/IPB-Hadirkan-Mata-Kuliah-Pangan-Halal-dan-Manajemen-Halal.jpg');
+    background-size: cover;
+  }
 
-  	h1 {
-  		position: absolute;
-  		font-family: georgia;
-  		font-size: 50px;
-  		left: 3%;
-  		top: 3px;
-  		color: #FAEBD7 ;
-  		border: 5px solid #FAEBD7 ;
-  		background:rgba(0,0,0,0.2);
+    h1 {
+      position: absolute;
+      font-family: georgia;
+      font-size: 50px;
+      left: 75%;
+      top: 500px;
+      color: #000080 ;
+      border: 5px solid #000080 ;
+      background:rgba(0,0,0,0.1);
       border-radius: 10px;
-  	}
+    }
 
     .body {
-       	width: 420px;
+        width: 420px;
         height: 780px;
         background: black;
         padding: 25px 35px;
         position: fixed;
-        left: 83%;
+        left: 35%;
         top: 50%;
         transform: translate(-50%, -50%);
         border-style:solid;
         border-color: white;
-		    border-width: 3px;
         border-width: 3px;
-        background:rgba(0,0,0,0.8);
+        border-width: 3px;
+        background:rgba(0,0,0,0.9);
         border-radius: 20px;
         }
 
     .body h2 {
-     	text-align: center;
-     	color: #fff;
-     	font-size: 35px;
-     	font-family: impact;
-     	font-weight: normal;
-     	margin-bottom: 30px;
-     	margin-top: 0px;
+      text-align: center;
+      color: #fff;
+      font-size: 35px;
+      font-family: impact;
+      font-weight: normal;
+      margin-bottom: 30px;
+      margin-top: 0px;
      }
 
     .body input {
-    	width: 100%;
-    	background: none;
-    	border: 1px solid #fff;
-    	border-radius: 3px;
-    	padding: 6px 15px;
-    	box-sizing: border-box;
-    	margin-bottom: 20px;
-    	font-size: 16px;
-    	color: #fff;
+      width: 100%;
+      background: none;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 6px 15px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #fff;
     }
 
     input[type="submit"] {
-    	background:  #800000;
+      background:  #800000;
     }
 
-   	p {
-   		color:white;
-   		font-size: 15px;
+    p {
+      color:white;
+      font-size: 15px;
       font-family: courier;
-   	}
+    }
 
-   	h3 {
-    	font-family: georgia;
-    	font-size: 16px;
-    	color: white;
-    	margin-top: 8%;
+    h3 {
+      font-family: georgia;
+      font-size: 18px;
+      color: white;
+      margin-top: 8%;
     }
 
     h4 {
-    	font-family: courier;
+      font-family: courier;
     }
 
-</style>
+ </style>
  </html>
+

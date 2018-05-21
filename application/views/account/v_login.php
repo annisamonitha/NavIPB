@@ -41,38 +41,38 @@
 			<?php echo form_close();?>
 
 			<h3>
-			Back to <?php echo anchor(site_url().'/beranda','Home'); ?>
-			</h3>
-			<h3>
-			Don't have an account? Register in  <?php echo anchor(site_url().'/register','Here');?>
-			</h3>
+      Back to Front Page click  <?php echo anchor(site_url().'/beranda','Here'); ?>
+      </h3>
+      <h3>
+      Don't have an account? Register in  <?php echo anchor(site_url().'/register','Here');?>
+      </h3>
  </body>
 
  <style>
-	html {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		position: absolute;
-		background-image: url('https://images.wallpaperscraft.com/image/map_book_poppy_seeds_cup_113809_1280x720.jpg');
-		background-size: cover;
-	}
+  html {
+    margin: 0;
+    padding: 0;
+    width: 120%;
+    position: absolute;
+    background-image: url('https://iksamenajang.files.wordpress.com/2013/07/small-ipb-kampus-1.jpg');
+    background-size: cover;
+  }
 
-	h1 {
-  		position: absolute;
-  		font-family: georgia;
-  		font-size: 30px;
-  		left: 3%;
-  		top: 20px;
-  		color:  #FFEFD5;
-  		border: 3px solid  #FFEFD5 ;
-  		background:rgba(0,0,0,0.4);
-  		border-radius: 10px;
-  	}
+  h1 {
+      position: absolute;
+      font-family: georgia;
+      font-size: 40px;
+      left: 3%;
+      top: 20px;
+      color:  #000000;
+      border: 4px solid #000000;
+      background:rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
 
     .body {
-       	width: 400px;
-       	height: 580px;
+        width: 400px;
+        height: 580px;
         background: black;
         padding: 60px 30px;
         position: fixed;
@@ -81,63 +81,63 @@
         transform: translate(-50%, -50%);
         border-style:solid;
         border-color: white;
-		border-width: 3px;
         border-width: 3px;
-        background:rgba(0,0,0,0.7);
+        border-width: 3px;
+        background:rgba(0,0,0,0.8);
         color: #fff;
         border-radius: 20px;
         }
 
     .body h2 {
-     	text-align: center;
-     	color: #fff;
-     	font-size: 35px;
-     	font-family: impact;
-     	font-weight: normal;
-     	margin-bottom: 30px;
-     	margin-top: 0px;
+      text-align: center;
+      color: #fff;
+      font-size: 35px;
+      font-family: impact;
+      font-weight: normal;
+      margin-bottom: 30px;
+      margin-top: 0px;
      }
 
     .body input {
-    	width: 100%;
-    	background: none;
-    	border: 1px solid #fff;
-    	border-radius: 3px;
-    	padding: 6px 15px;
-    	box-sizing: border-box;
-    	margin-bottom: 20px;
-    	font-size: 18px;
-    	color: #fff;
+      width: 100%;
+      background: none;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 6px 15px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #fff;
     }
 
     .avatar{
-    	width: 110px;
-    	height: 110px;
-    	border-radius: 50%;
-    	position: absolute;
-    	top: -70px;
-    	left: 145px;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      position: absolute;
+      top: -70px;
+      left: 145px;
     }
 
     input[type="submit"] {
-    	background:#800000;
+      background:#800000;
     }
 
-   	p {
-   		color:white;
-   		font-size: 15px;
-   		font-family: courier;
-   	}
+    p {
+      color:white;
+      font-size: 15px;
+      font-family: courier;
+    }
 
-   	h3 {
-    	font-family: georgia;
-    	font-size: 17px;
-    	color: white;
-    	margin-top: 10%;
+    h3 {
+      font-family: georgia;
+      font-size: 17px;
+      color: white;
+      margin-top: 10%;
     }
 
     h4 {
-    	font-family: courier;
+      font-family: courier;
     }
 
  </html>
