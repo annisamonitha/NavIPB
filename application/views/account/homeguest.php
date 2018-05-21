@@ -11,19 +11,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!-- VENDOR CSS -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
-  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
-  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/linearicons/style.css');?>">
-  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/vendor/chartist/css/chartist-custom.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/linearicons/style.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/chartist/css/chartist-custom.css');?>">
   <!-- MAIN CSS -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/css/main.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/css/main.css');?>">
   <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/klorofill/assets/css/demo.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/css/demo.css');?>">
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
   <!-- ICONS -->
-  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/klorofill/assets/img/apple-icon.png');?>">
-  <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/klorofill/assets/img/favicon.png');?>">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/home1/assets/img/apple-icon.png');?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/home1/assets/img/favicon.png');?>">
 </head>
 
 <body>
@@ -86,6 +86,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <p><h6> CCR - TL </h6></p>
                     </a>
                   </li>
+                  <li>
+                    <a href="<?php echo ('parkir');?>" class="">
+                      <h4> Tempat Parkir </h4>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -109,12 +114,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </div>
   <!-- END WRAPPER -->
   <!-- Javascript -->
-  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery/jquery.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/klorofill/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/klorofill/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/klorofill/assets/vendor/chartist/js/chartist.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/klorofill/assets/scripts/klorofil-common.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/jquery/jquery.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/chartist/js/chartist.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/scripts/klorofil-common.js');?>"></script>
 </body>
 
 </html>
