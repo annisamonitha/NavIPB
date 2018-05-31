@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Schedule | NavIPB</title>
-
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ;?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/datatables/css/dataTables.bootstrap.css') ;?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/linearicons/style.css');?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/chartist/css/chartist-custom.css');?>">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/css/main.css');?>">
+  <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/css/demo.css');?>">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/home1/assets/img/apple-icon.png');?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/home1/assets/img/favicon.png');?>">
 </head>
-<body> 
 
+<body> 
+	
 
 	<div class="container">
-		<button class="btn btn-success" onclick="add_schedule()"><i class="glyphicon glyphicon-plus"></i>Add Schedule</button>
+		<button class="btn btn-success" onclick="add_schedule()"><i class="glyphicon glyphicon-plus"></i>Add Course</button>
 		<br>
 		<br>
 
@@ -23,7 +39,7 @@
 				<th>Course Day</th>
 				<th>Course Time</th>
 				<th>Course Place</th>
-				<th>Course Note</th>
+				<th>Note About Course</th>
 				<th>Action</th>
 			</tr>
 			</thead>
@@ -83,9 +99,9 @@
 			var url;
 
 			if(save_method == 'add') {
-				url = '<?php echo site_url('index.php/Schedule/schedule_add') ;?>';
+				url = '<?php echo site_url('Schedule/schedule_add') ;?>';
 			} else {
-				url = '<?php echo site_url('index.php/Schedule/schedule_update') ;?>';	
+				url = '<?php echo site_url('Schedule/schedule_update') ;?>';	
 			}
 
 			$.ajax({
@@ -109,7 +125,7 @@
 
 			//load data dari ajax
 			$.ajax({
-				url: "<?php echo site_url('index.php/schedule/ajax_edit/') ;?>/"+id,
+				url: "<?php echo site_url('schedule/ajax_edit/') ;?>/"+id,
 				type: "GET",
 				dataType: "JSON",
 				success: function(data) {
@@ -135,7 +151,7 @@
 				// ajax delete data dari database
 
 				$.ajax({
-					url: "<?php echo site_url('index.php/schedule/schedule_delete') ;?>/"+id,
+					url: "<?php echo site_url('schedule/schedule_delete') ;?>/"+id,
 					type: "POST",
 					dataType:"JSON",
 					success: function(data) {
@@ -155,7 +171,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
+        <h4 class="modal-title">Add Your Course Here</h4>
       </div>
       <div class="modal-body form">
       <form action="#" id="form" class="form-horizontal">
