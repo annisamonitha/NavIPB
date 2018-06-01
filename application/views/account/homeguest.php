@@ -88,7 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </li>
                   <li>
                     <a href="<?php echo ('parkir');?>" class="">
-                      <h4> Tempat Parkir </h4>
+                      <h4> Parking Lot </h4>
                     </a>
                   </li>
                 </ul>

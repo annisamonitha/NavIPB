@@ -1,3 +1,7 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,16 +46,16 @@
 		  </div>
 		</form>
 		<div id="navbar-menu">
-		  <ul class="nav navbar-nav navbar-right">
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-			  <ul class="dropdown-menu">
-				<li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
-				<li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
-			  </ul>
-			</li>
-		  </ul>
-		</div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
+                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 	  </div>
 	</nav>
 	<!-- END NAVBAR -->
@@ -60,38 +64,39 @@
 	  <div class="sidebar-scroll">
 		<nav>
 		  <ul class="nav">
-			<li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+			<li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
 			<li>
-			  <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+			  <a href="#subPages" data-toggle="collapse" class=""><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 			  <div id="subPages" class="collapse ">
 				<ul class="nav">
 				  <li>
-					<a href="<?php echo ('ipb1');?>" class="">
+					<a href="<?php echo ('ipb1user');?>" class="">
 					  <h4> IPB 1 </h4>
 					  <p><h6> FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA </h6></p>
 					</a>
 				  </li>
 				  <li>
-					<a href="<?php echo ('ipb2');?>" class="">
+					<a href="<?php echo ('ipb2user');?>" class="">
 					  <h4> IPB 2 </h4>
 					  <p><h6> FKH - FPIK - FAPET - FMIPA Baru - FEM Baru </h6></p>
 					</a>
 				  </li>
 				  <li>
-					<a href="<?php echo ('ipb3');?>" class="">
+					<a href="<?php echo ('ipb3user');?>" class="">
 					  <h4> IPB 3 </h4>
 					  <p><h6> CCR - TL </h6></p>
 					</a>
 				  </li>
 				  <li>
 					<a href="<?php echo ('parkir');?>" class="">
-					  <h4> Tempat Parkir </h4>
+					  <h4> Parking Lot </h4>
 					</a>
 				  </li>
 				</ul>
 			  </div>
 			</li>
-			<li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+			<li><a href="<?php echo ('schedule');?>" class="active"><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+			<li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
 		  </ul>
 		</nav>
 	  </div>
@@ -99,18 +104,7 @@
 	<!-- END LEFT SIDEBAR -->
 	<!-- MAIN -->
 	<div class="main">
-	  
-	</div>
-	<!-- END MAIN -->
-	<div class="clearfix"></div>
-	<footer>
-	  <div class="container-fluid">
-		<p class="copyright">&copy; 2018. NavIPB</p>
-	  </div>
-	</footer>
-  </div>
-  <!-- END WRAPPER -->
-  <p>
+		<p>
 	<div class="container">
 		<button class="btn btn-success" onclick="add_schedule()"><i class="glyphicon glyphicon-plus"></i>Add Course</button>
 		<br>
@@ -155,6 +149,17 @@
 		</table>
 	</div>
 	<p>
+	  
+	</div>
+	<!-- END MAIN -->
+	<div class="clearfix"></div>
+	<footer>
+	  <div class="container-fluid">
+		<p class="copyright">&copy; 2018. NavIPB</p>
+	  </div>
+	</footer>
+  </div>
+  <!-- END WRAPPER -->
 
 	<!-- link to js -->
 	<script src="<?php echo base_url('assets/jquery/jquery-3.3.1.min.js') ;?>"></script>

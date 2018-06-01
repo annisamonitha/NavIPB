@@ -47,10 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
-                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
+                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
+                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
               </ul>
             </li>
           </ul>
@@ -94,7 +94,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </ul>
               </div>
             </li>
-            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>
@@ -113,7 +114,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </footer>
   </div>
   <!-- END WRAPPER -->
-  
   <!-- Javascript -->
   <script src="<?php echo base_url('assets/home1/assets/vendor/jquery/jquery.min.js');?>"></script>
   <script src="<?php echo base_url('assets/home1/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
