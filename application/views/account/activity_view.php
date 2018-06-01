@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Schedule | NavIPB</title>
+  <title>Activity | NavIPB</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ;?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/datatables/css/dataTables.bootstrap.css') ;?>">
@@ -95,8 +95,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </ul>
         </div>
       </li>
-      <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
-      <li><a href="<?php echo ('activity');?>" class="active"><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
+      <li><a href="<?php echo ('schedule');?>" class="active"><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+      <li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
       </ul>
     </nav>
     </div>
@@ -104,6 +104,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- END LEFT SIDEBAR -->
   <!-- MAIN -->
   <div class="main">
+    <p>
+  <div class="container">
+    <button class="btn btn-success" onclick="add_activity()"><i class="glyphicon glyphicon-plus"></i>Add Activity</button>
+    <br>
+    <br>
+
+    <table id="table_id" class="table table-stripped table-bordered">
+      <thead>
+      <tr>
+        <th>Activity ID</th>
+        <th>Activity Name</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <?php
+      foreach($activities as $activitie) {
+
+      ?>
+      <tr>
+        <td><?php echo $activitie->activity_id ;?></td>
+        <td><?php echo $activitie->activity_name ;?></td>
+        <td><?php echo $activitie->activity_explanation ;?></td>
+        <td>
+          <button class="btn btn-warning" onclick="edit_activity(<?php echo $activitie->activity_id; ?>)"><i class="glyphicon glyphicon-pencil"></i></button>
+
+          <button class="btn btn-danger" onclick="delete_activity(<?php echo $activitie->activity_id; ?>)"><i class="glyphicon glyphicon-remove"></i></button>
+        </td>
+      </tr>
+
+    <?php
+    }
+    ?>
+      </tbody>
+    </table>
+  </div>
+  <p>
     
   </div>
   <!-- END MAIN -->
@@ -134,7 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     var save_method;
     var table;
 
-    function add_schedule() {
+    function add_activity() {
       save_method = 'add';
       $('#form')[0].reset();
       $('#modal_form').modal('show');
@@ -144,9 +183,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       var url;
 
       if(save_method == 'add') {
-        url = '<?php echo site_url('Schedule/schedule_add') ;?>';
+        url = '<?php echo site_url('Activity/activity_add') ;?>';
       } else {
-        url = '<?php echo site_url('Schedule/schedule_update') ;?>';  
+        url = '<?php echo site_url('Activity/activity_update') ;?>';  
       }
 
       $.ajax({
@@ -164,26 +203,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       });
     } 
 
-    function edit_schedule(id) {
+    function edit_activity(id) {
       save_method = 'update';
       $('#form')[0].reset();
 
       //load data dari ajax
       $.ajax({
-        url: "<?php echo site_url('schedule/ajax_edit/') ;?>/"+id,
+        url: "<?php echo site_url('activity/ajax_edit/') ;?>/"+id,
         type: "GET",
         dataType: "JSON",
         success: function(data) {
-          $('[name="course_id"]').val(data.course_id);
-          $('[name="course_name"]').val(data.course_name);
-          $('[name="course_day"]').val(data.course_day);
-          $('[name="course_time"]').val(data.course_time);
-          $('[name="course_place"]').val(data.course_place);
-          $('[name="course_note"]').val(data.course_note);
+          $('[name="activity_id"]').val(data.activity_id);
+          $('[name="activity_name"]').val(data.activity_name);
+          $('[name="activity_explanation"]').val(data.activity_explanation);
           
           $('#modal_form').modal('show');
           
-          $('.modal_title').text('Edit Schedule');
+          $('.modal_title').text('Edit Activity');
         },
         error: function(jqXHR, textStatus, errorThrown) {
           alert('Error Get Data From Ajax');
@@ -191,12 +227,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       });
     }
 
-    function delete_schedule(id) {
+    function delete_activity(id) {
       if(confirm('Are you sure delete this data?')) {
         // ajax delete data dari database
 
         $.ajax({
-          url: "<?php echo site_url('schedule/schedule_delete') ;?>/"+id,
+          url: "<?php echo site_url('activity/activity_delete') ;?>/"+id,
           type: "POST",
           dataType:"JSON",
           success: function(data) {
@@ -220,52 +256,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="modal-content">
     <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h4 class="modal-title">Add Your Course Here</h4>
+    <h4 class="modal-title">Add Your Activity Here</h4>
     </div>
     <div class="modal-body form">
     <form action="#" id="form" class="form-horizontal">
-    <input type="hidden" value="" name="course_id">
+    <input type="hidden" value="" name="activity_id">
 
     <div class="form-body">
       <div class="form-group">
-        <label class="control-label col-md-3">Course Name</label>
+        <label class="control-label col-md-3">Activity Name</label>
         <div class="col-md-9">
-          <input type="text" name="course_name" placeholder="‎ex: Bahasa Pemrograman" class="form-control">
+          <input type="text" name="activity_name" placeholder="‎ex: Hari-H Pesta Sains Nasional" class="form-control">
         </div>
        </div>
     </div>
 
     <div class="form-body">
       <div class="form-group">
-        <label class="control-label col-md-3">Course Day</label>
+        <label class="control-label col-md-3">Description</label>
         <div class="col-md-9">
-          <input type="text" name="course_day" placeholder="ex: Senin" class="form-control">
-        </div>
-       </div>
-    </div>
-
-    <div class="form-body">
-      <div class="form-group">
-        <label class="control-label col-md-3">Course Time</label>
-        <div class="col-md-9">
-          <input type="text" name="course_time" placeholder="ex: 10.00-12.00" class="form-control">
-        </div>
-       </div>
-    </div>
-
-    <div class="form-body">
-      <div class="form-group">
-        <label class="control-label col-md-3">Course Place</label>
-        <div class="col-md-9">
-          <input type="text" name="course_place" placeholder="ex: RK.U 201" class="form-control">
-        </div>
-       </div>
-    </div>
-    <div class="form-body">
-      <div class="form-group">
-        <label class="control-label col-md-3">Note</label>
-        <div class="col-md-9">
-          <input type="text" name="course_note" placeholder="Your Note" class="form-control">
+          <input type="text" name="activity_explanation" placeholder="ex: write your description about your activity here" class="form-control">
         </div>
        </div>
     </div>
