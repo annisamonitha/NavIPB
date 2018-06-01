@@ -24,8 +24,93 @@
 </head>
 
 <body> 
-	
-
+	<!-- WRAPPER -->
+  <div id="wrapper">
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="brand">
+		<a href="#">NavIPB</a>
+	  </div>
+	  <div class="container-fluid">
+		<div class="navbar-btn">
+		  <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+		</div>
+		<form class="navbar-form navbar-left">
+		  <div class="input-group">
+			<input type="text" value="" class="form-control" placeholder="Search...">
+			<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+		  </div>
+		</form>
+		<div id="navbar-menu">
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+			  <ul class="dropdown-menu">
+				<li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
+				<li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<!-- END NAVBAR -->
+	<!-- LEFT SIDEBAR -->
+	<div id="sidebar-nav" class="sidebar">
+	  <div class="sidebar-scroll">
+		<nav>
+		  <ul class="nav">
+			<li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+			<li>
+			  <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+			  <div id="subPages" class="collapse ">
+				<ul class="nav">
+				  <li>
+					<a href="<?php echo ('ipb1');?>" class="">
+					  <h4> IPB 1 </h4>
+					  <p><h6> FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA </h6></p>
+					</a>
+				  </li>
+				  <li>
+					<a href="<?php echo ('ipb2');?>" class="">
+					  <h4> IPB 2 </h4>
+					  <p><h6> FKH - FPIK - FAPET - FMIPA Baru - FEM Baru </h6></p>
+					</a>
+				  </li>
+				  <li>
+					<a href="<?php echo ('ipb3');?>" class="">
+					  <h4> IPB 3 </h4>
+					  <p><h6> CCR - TL </h6></p>
+					</a>
+				  </li>
+				  <li>
+					<a href="<?php echo ('parkir');?>" class="">
+					  <h4> Tempat Parkir </h4>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</li>
+			<li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+		  </ul>
+		</nav>
+	  </div>
+	</div>
+	<!-- END LEFT SIDEBAR -->
+	<!-- MAIN -->
+	<div class="main">
+	  
+	</div>
+	<!-- END MAIN -->
+	<div class="clearfix"></div>
+	<footer>
+	  <div class="container-fluid">
+		<p class="copyright">&copy; 2018. NavIPB</p>
+	  </div>
+	</footer>
+  </div>
+  <!-- END WRAPPER -->
+  <p>
 	<div class="container">
 		<button class="btn btn-success" onclick="add_schedule()"><i class="glyphicon glyphicon-plus"></i>Add Course</button>
 		<br>
@@ -39,7 +124,7 @@
 				<th>Course Day</th>
 				<th>Course Time</th>
 				<th>Course Place</th>
-				<th>Note About Course</th>
+				<th>Just a Note</th>
 				<th>Action</th>
 			</tr>
 			</thead>
@@ -69,7 +154,7 @@
 			</tbody>
 		</table>
 	</div>
-
+	<p>
 
 	<!-- link to js -->
 	<script src="<?php echo base_url('assets/jquery/jquery-3.3.1.min.js') ;?>"></script>
@@ -83,7 +168,7 @@
 	<!-- js -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-	 		$('#table_id').DataTable();
+			$('#table_id').DataTable();
 		});
 
 		var save_method;
@@ -165,72 +250,74 @@
 		}
 
 	</script>
-
+	 <script src="<?php echo base_url('assets/home1/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/chartist/js/chartist.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/scripts/klorofil-common.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/home1/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js');?>"></script>
 <div class="modal fade" id="modal_form" role="dialog">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Your Course Here</h4>
-      </div>
-      <div class="modal-body form">
-      <form action="#" id="form" class="form-horizontal">
-      	<input type="hidden" value="" name="course_id">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title">Add Your Course Here</h4>
+	  </div>
+	  <div class="modal-body form">
+	  <form action="#" id="form" class="form-horizontal">
+		<input type="hidden" value="" name="course_id">
 
-      	<div class="form-body">
-      		<div class="form-group">
-      			<label class="control-label col-md-3">Course Name</label>
-      			<div class="col-md-9">
-      				<input type="text" name="course_name" placeholder="‎ex: Bahasa Pemrograman" class="form-control">
-      			</div>
-     		 </div>
-  		</div>
+		<div class="form-body">
+			<div class="form-group">
+				<label class="control-label col-md-3">Course Name</label>
+				<div class="col-md-9">
+					<input type="text" name="course_name" placeholder="‎ex: Bahasa Pemrograman" class="form-control">
+				</div>
+			 </div>
+		</div>
 
-    	<div class="form-body">
-      		<div class="form-group">
-      			<label class="control-label col-md-3">Course Day</label>
-      			<div class="col-md-9">
-      				<input type="text" name="course_day" placeholder="ex: Senin" class="form-control">
-      			</div>
-     		 </div>
-  		</div>
+		<div class="form-body">
+			<div class="form-group">
+				<label class="control-label col-md-3">Course Day</label>
+				<div class="col-md-9">
+					<input type="text" name="course_day" placeholder="ex: Senin" class="form-control">
+				</div>
+			 </div>
+		</div>
 
-  		<div class="form-body">
-      		<div class="form-group">
-      			<label class="control-label col-md-3">Course Time</label>
-      			<div class="col-md-9">
-      				<input type="text" name="course_time" placeholder="ex: 10.00-12.00" class="form-control">
-      			</div>
-     		 </div>
-  		</div>
+		<div class="form-body">
+			<div class="form-group">
+				<label class="control-label col-md-3">Course Time</label>
+				<div class="col-md-9">
+					<input type="text" name="course_time" placeholder="ex: 10.00-12.00" class="form-control">
+				</div>
+			 </div>
+		</div>
 
-  		<div class="form-body">
-      		<div class="form-group">
-      			<label class="control-label col-md-3">Course Place</label>
-      			<div class="col-md-9">
-      				<input type="text" name="course_place" placeholder="ex: RK.U 201" class="form-control">
-      			</div>
-     		 </div>
-  		</div>
-  		<div class="form-body">
-      		<div class="form-group">
-      			<label class="control-label col-md-3">Note</label>
-      			<div class="col-md-9">
-      				<input type="text" name="course_note" placeholder="Your Note" class="form-control">
-      			</div>
-     		 </div>
-  		</div>
+		<div class="form-body">
+			<div class="form-group">
+				<label class="control-label col-md-3">Course Place</label>
+				<div class="col-md-9">
+					<input type="text" name="course_place" placeholder="ex: RK.U 201" class="form-control">
+				</div>
+			 </div>
+		</div>
+		<div class="form-body">
+			<div class="form-group">
+				<label class="control-label col-md-3">Note</label>
+				<div class="col-md-9">
+					<input type="text" name="course_note" placeholder="Your Note" class="form-control">
+				</div>
+			 </div>
+		</div>
 
+	  </form>
 
-
-      </form>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" onclick="save()" class="btn btn-primary">Submit</button>
-      </div>
-    </div><!-- /.modal-content -->
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<button type="button" onclick="save()" class="btn btn-primary">Submit</button>
+	  </div>
+	</div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </body>

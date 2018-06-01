@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo anchor('homeguest','Home');?></a>
+              <a class="nav-link" href="#"><?php echo anchor('homeguest','Maps');?></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><?php echo anchor('login','Log In');?></a>

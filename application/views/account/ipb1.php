@@ -113,6 +113,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </footer>
   </div>
   <!-- END WRAPPER -->
+  
   <!-- Javascript -->
   <script src="<?php echo base_url('assets/home1/assets/vendor/jquery/jquery.min.js');?>"></script>
   <script src="<?php echo base_url('assets/home1/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
