@@ -6,10 +6,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-  <title>Home | NavIPB</title>
+  <title>Maps | NavIPB</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <!-- VENDOR CSS -->
   <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
@@ -47,10 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('login');?>"><i class="lnr lnr-sign-in"></i><span>Log In</span></a></li>
-                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
+                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
+                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
               </ul>
             </li>
           </ul>
@@ -63,39 +65,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('homeguest');?>" class="active"><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
-              <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+              <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
                 <ul class="nav">
                   <li>
-                    <a href="<?php echo ('ipb1');?>" class="">
+                    <a href="<?php echo ('ipb1user');?>" class="">
                       <h4> IPB 1 </h4>
                       <p><h6> FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('ipb2');?>" class="">
+                    <a href="<?php echo ('ipb2user');?>" class="">
                       <h4> IPB 2 </h4>
                       <p><h6> FKH - FPIK - FAPET - FMIPA Baru - FEM Baru </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('ipb3');?>" class="">
+                    <a href="<?php echo ('ipb3user');?>" class="">
                       <h4> IPB 3 </h4>
                       <p><h6> CCR - TL </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('parkir');?>" class="">
+                    <a href="<?php echo ('parkiruser');?>" class="">
                       <h4> Parking Lot </h4>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
-			<li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
+            <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>
@@ -103,7 +105,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
-      
+
+ <div class="main-content">
+<h3 class="page-title">GKA</h3>
+
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
+  <h3>dari berlin lurus menuju media center, sebelum media center ada belokan.</h3>
+</div>
+
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/gka.png');?>">
+  <h3>sebelum media center belok kiri, di sebelah kanan itulah gedung GKA</h3>
+</div>
+
+ </div>
     </div>
     <!-- END MAIN -->
     <div class="clearfix"></div>

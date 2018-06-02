@@ -51,8 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
-                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
+                <li><a href="<?php echo ('login');?>"><span>Log In </span></a></li>
+                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
               </ul>
             </li>
           </ul>
@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('login');?>" class="">
+                    <a href="<?php echo ('parkir');?>" class="">
                       <h4> Parking Lot </h4>
                     </a>
                   </li>

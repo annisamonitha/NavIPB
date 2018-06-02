@@ -95,6 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
             </li>
             <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+			<li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>

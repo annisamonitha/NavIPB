@@ -49,10 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
-                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
+                <li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
+                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
               </ul>
             </li>
           </ul>
@@ -96,8 +96,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </ul>
               </div>
             </li>
-            <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
-            <li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
+            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>
@@ -111,17 +111,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
-  <p>dari berlin lurus menuju media center, sebelum media center ada belokan</p>
+  <h3>Dari berlin, lurus sampai sebelum media center</h3>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/toyib.png');?>">
-  <p>sebelum media center belok kanan, kemudian lurus sampai MAHATAN (di sebelah kiri) </p>
+  <h3> Belok kanan, kemudian lurus sampai bertemu tulisan "Mahatan". Kemudian berbelok ke sebelah kanan Mahatan. </h3>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/toyib 1.png');?>">
-  <p>dari MAHATAN terdapat tangga, kemudian naik dan disitulah Auditorium Toyib</p>
+  <h3>Naik tangga yang berada di sebelah kanan dan di situ lah Auditorium Toyib</h3>
 </div>
 
  </div>

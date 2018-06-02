@@ -88,15 +88,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </a>
           </li>
           <li>
-          <a href="<?php echo ('parkir');?>" class="">
+          <a href="<?php echo ('parkiruser');?>" class="">
             <h4> Parking Lot </h4>
           </a>
           </li>
         </ul>
         </div>
       </li>
-      <li><a href="<?php echo ('schedule');?>" class="active"><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
-      <li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
+      <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+      <li><a href="<?php echo ('activity');?>" class="active"><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
       </ul>
     </nav>
     </div>
@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="main">
     <p>
   <div class="container">
-    <button class="btn btn-success" onclick="add_activity()"><i class="glyphicon glyphicon-plus"></i>Add Activity</button>
+    <button class="btn btn-success" onClick="add_activity()"><i class="glyphicon glyphicon-plus"></i>Add Activity</button>
     <br>
     <br>
 
@@ -130,9 +130,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <td><?php echo $activitie->activity_name ;?></td>
         <td><?php echo $activitie->activity_explanation ;?></td>
         <td>
-          <button class="btn btn-warning" onclick="edit_activity(<?php echo $activitie->activity_id; ?>)"><i class="glyphicon glyphicon-pencil"></i></button>
+          <button class="btn btn-warning" onClick="edit_activity(<?php echo $activitie->activity_id; ?>)"><i class="glyphicon glyphicon-pencil"></i></button>
 
-          <button class="btn btn-danger" onclick="delete_activity(<?php echo $activitie->activity_id; ?>)"><i class="glyphicon glyphicon-remove"></i></button>
+          <button class="btn btn-danger" onClick="delete_activity(<?php echo $activitie->activity_id; ?>)"><i class="glyphicon glyphicon-remove"></i></button>
         </td>
       </tr>
 
@@ -285,7 +285,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    <button type="button" onclick="save()" class="btn btn-primary">Submit</button>
+    <button type="button" onClick="save()" class="btn btn-primary">Submit</button>
     </div>
   </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
