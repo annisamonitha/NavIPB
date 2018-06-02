@@ -111,17 +111,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
-  <p>penjelasan....</p>
+  <p>dari berlin lurus menuju media center, sebelum media center ada belokan</p>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/toyib.png');?>">
-  <p>penjelasan....</p>
+  <p>sebelum media center belok kanan, kemudian lurus sampai MAHATAN (di sebelah kiri) </p>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/toyib 1.png');?>">
-  <p>penjelasan....</p>
+  <p>dari MAHATAN terdapat tangga, kemudian naik dan disitulah Auditorium Toyib</p>
 </div>
 
  </div>

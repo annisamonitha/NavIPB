@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
               <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
@@ -111,12 +111,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
-  <p>penjelasan....</p>
+  <p>dari berlin lurus menuju media center, sebelum media center ada belokan.</p>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/gka.png');?>">
-  <p>penjelasan....</p>
+  <p>sebelum media center belok kiri, di sebelah kanan itulah gedung GKA</p>
 </div>
 
  </div>
