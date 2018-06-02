@@ -10,6 +10,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <!-- VENDOR CSS -->
   <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
@@ -49,8 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
-                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
+                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
+                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
               </ul>
             </li>
           </ul>
@@ -87,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('parkir');?>" class="">
+                    <a href="<?php echo ('login');?>" class="">
                       <h4> Parking Lot </h4>
                     </a>
                   </li>
@@ -95,6 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
             </li>
             <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>
@@ -102,7 +105,84 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
-      
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <div class="container-fluid">
+          <h3 class="page-title">Maps</h3>
+            <div class="col-lg-11">
+
+              <!-- PANEL HEADLINE -->
+              <div class="panel panel-headline">
+                <div class="carousel-inner" role="listbox" style="text-align: center;">
+                  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ipb1.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+                  <h3>IPB 1</h3>
+                  <h4>FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA</h4>
+                </div>
+              </div>
+              <!-- END PANEL HEADLINE -->
+            </div>
+
+            <p><div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
+                  </div>
+                </p>
+
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- GKA -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">GKA (Gedung Kuliah A)</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/gkafix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END GKA -->
+            </div>
+            <div class="col-md-4">
+              <!-- PANEL pinus 1 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">R. Pinus 1</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/pinus1.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('pinus1');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END pinus 1 -->
+            </div>
+            <div class="col-md-4">
+              <!-- PANEL pinus 2 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Auditorium Toyib</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="https://lh5.googleusercontent.com/-sMU5YVSJrnQ/TyivjqFKShI/AAAAAAAAJoQ/jSDYfQXO3Z0/s980/IPB3.jpg" width="300" height="200">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('toyib');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END pinus 2 -->
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END MAIN CONTENT -->
     </div>
     <!-- END MAIN -->
     <div class="clearfix"></div>
@@ -113,7 +193,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </footer>
   </div>
   <!-- END WRAPPER -->
-  
   <!-- Javascript -->
   <script src="<?php echo base_url('assets/home1/assets/vendor/jquery/jquery.min.js');?>"></script>
   <script src="<?php echo base_url('assets/home1/assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>

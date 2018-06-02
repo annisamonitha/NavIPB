@@ -105,84 +105,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
-      <!-- MAIN CONTENT -->
-      <div class="main-content">
-        <div class="container-fluid">
-          <h3 class="page-title">Maps</h3>
-            <div class="col-lg-11">
 
-              <!-- PANEL HEADLINE -->
-              <div class="panel panel-headline">
-                <div class="carousel-inner" role="listbox" style="text-align: center;">
-                  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ipb1.png');?>">
-                </div>
-                <div class="panel-body" align="center">
-                  <h3>IPB 1</h3>
-                  <h4>FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA</h4>
-                </div>
-              </div>
-              <!-- END PANEL HEADLINE -->
-            </div>
+ <div class="main-content">
+<h3 class="page-title">R. Pinus 1</h3>
 
-            <p><div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search...">
-                    <span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
-                  </div>
-                </p>
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
+  <p>penjelasan....</p>
+</div>
 
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus 1.png');?>">
+  <p>penjelasan....</p>
+</div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <!-- GKA -->
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">GKA (Gedung Kuliah A)</h3>
-                </div>
-                <div class="carousel-inner" style="text-align: center;">
-                  <img class="card-img-top" src="<?php echo base_url('assets/maps/gkafix.png');?>">
-                </div>
-                <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
-                </div>
-              </div>
-              <!-- END GKA -->
-            </div>
-            <div class="col-md-4">
-              <!-- PANEL pinus 1 -->
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">R. Pinus 1</h3>
-                </div>
-                <div class="carousel-inner" style="text-align: center;">
-                  <img class="card-img-top" src="<?php echo base_url('assets/maps/pinus1.png');?>">
-                </div>
-                <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('pinus1');?>" title="See More"><span>See More</span></a>
-                </div>
-              </div>
-              <!-- END pinus 1 -->
-            </div>
-            <div class="col-md-4">
-              <!-- PANEL pinus 2 -->
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Auditorium Toyib</h3>
-                </div>
-                <div class="carousel-inner" style="text-align: center;">
-                  <img class="card-img-top" src="https://lh5.googleusercontent.com/-sMU5YVSJrnQ/TyivjqFKShI/AAAAAAAAJoQ/jSDYfQXO3Z0/s980/IPB3.jpg" width="300" height="200">
-                </div>
-                <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('toyib');?>" title="See More"><span>See More</span></a>
-                </div>
-              </div>
-              <!-- END pinus 2 -->
-            </div>
-          </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END MAIN CONTENT -->
+ </div>
     </div>
     <!-- END MAIN -->
     <div class="clearfix"></div>
