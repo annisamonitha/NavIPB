@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('dasboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
               <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
@@ -111,7 +111,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	</div>
       </form>
             <div class="col-lg-11">
-
       
     </div>
     <!-- END MAIN -->
