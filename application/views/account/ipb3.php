@@ -135,7 +135,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/auditccrfix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('auditccr');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END audit ccr -->
@@ -151,7 +151,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.01fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr101');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.01 -->
@@ -166,7 +166,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.02fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr102');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.02 -->
@@ -181,7 +181,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.03fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr103');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.03 -->
@@ -196,7 +196,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.04fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr104');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.04 -->
@@ -211,7 +211,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.05fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr105');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.05 -->
@@ -226,7 +226,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.06fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr106');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.06 -->
@@ -241,7 +241,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.07fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr107');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.07 -->
@@ -256,7 +256,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.08fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr108');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.08 -->
@@ -271,7 +271,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.09fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr109');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.09 -->
@@ -286,10 +286,74 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/1.10fix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('ccr110');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END 1.10 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.01 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.01</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.01fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr201');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.01 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.02 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.02</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.02fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr202');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.02 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.03 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.03</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.03fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr203');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.03 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.04 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.04</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.04fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr204');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.04 -->
             </div>
 
           </div>

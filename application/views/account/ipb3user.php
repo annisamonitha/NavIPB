@@ -125,6 +125,243 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <!-- END PANEL HEADLINE -->
             </div>
 
+           <div class="row">
+              <div class="col-md-4">
+              <!-- audit ccr -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Auditorium CCR</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/auditccrfix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('auditccr');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END audit ccr -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 1.01 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.01</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.01fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr101user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.01 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.02 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.02</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.02fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr102user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.02 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.03 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.03</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.03fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr103user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.03 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.04 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.04</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.04fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr104user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.04 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.05 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.05</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.05fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr105user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.05 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.06 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.06</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.06fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr106user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.06 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.07 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.07</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.07fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr107user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.07 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.08 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.08</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.08fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr108user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.08 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.09 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.09</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.09fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr109user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.09 -->
+            </div>
+            <div class="col-md-4">
+              <!-- 1.10 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">1.10</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/1.10fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr110user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 1.10 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.01 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.01</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.01fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr201user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.01 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.02 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.02</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.02fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr202yser');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.02 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.03 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.03</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.03fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr203user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.03 -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- 2.04 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">2.04</h3>
+                </div>
+                <div class="carousel-inner" style="text-align: center;">
+                  <img class="card-img-top" src="<?php echo base_url('assets/maps/2.04fix.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+              <a class="btn btn-primary" href="<?php echo ('ccr204user');?>" title="See More"><span>See More</span></a>
+                </div>
+              </div>
+              <!-- END 2.04 -->
+            </div>
+
+          </div>
+            </div>
+          </div>
+        </div>
+
       
     </div>
     <!-- END MAIN -->
