@@ -38,12 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="navbar-btn">
           <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
         </div>
-        <form class="navbar-form navbar-left">
-          <div class="input-group">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-          </div>
-        </form>
+        
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -63,31 +58,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
               <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
                 <ul class="nav">
                   <li>
-                    <a href="<?php echo ('ipb1');?>" class="">
+                    <a href="<?php echo ('ipb1user');?>" class="">
                       <h4> IPB 1 </h4>
                       <p><h6> FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('ipb2');?>" class="">
+                    <a href="<?php echo ('ipb2user');?>" class="">
                       <h4> IPB 2 </h4>
                       <p><h6> FKH - FPIK - FAPET - FMIPA Baru - FEM Baru </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('ipb3');?>" class="">
+                    <a href="<?php echo ('ipb3user');?>" class="">
                       <h4> IPB 3 </h4>
                       <p><h6> CCR - TL </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('parkir');?>" class="">
+                    <a href="<?php echo ('parkiruser');?>" class="">
                       <h4> Parking Lot </h4>
                     </a>
                   </li>
@@ -103,6 +98,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
+    
+    <!-- MAIN CONTENT -->
+      
+      <div class="main-content">
+        <div class="container-fluid">
+          <h3 class="page-title">Maps</h3>
+      <form action="" method="post" class="navbar-form navbar-left">
+      	<div class="input-group">
+      		<input class="form-control" type="text" placeholder="Search...">
+      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
+      	</div>
+      </form>
+            <div class="col-lg-11">
+              <!-- PANEL HEADLINE -->
+              <div class="panel panel-headline">
+                <div class="carousel-inner" role="listbox" style="text-align: center;">
+                  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ipb2.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+                  <h3>IPB 2</h3>
+                  <h4>FKH - FPIK - FAPET - FMIPA Baru - FEM Baru</h4>
+                </div>
+              </div>
+              <!-- END PANEL HEADLINE -->
+            </div>
+
       
     </div>
     <!-- END MAIN -->

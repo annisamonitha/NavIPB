@@ -10,6 +10,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <!-- VENDOR CSS -->
   <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/bootstrap/css/bootstrap.min.css');?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/home1/assets/vendor/font-awesome/css/font-awesome.min.css');?>">
@@ -98,34 +100,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
-    
-    <!-- MAIN CONTENT -->
-      
-      <div class="main-content">
-        <div class="container-fluid">
-          <h3 class="page-title">Maps</h3>
-      <form action="" method="post" class="navbar-form navbar-left">
-      	<div class="input-group">
-      		<input class="form-control" type="text" placeholder="Search...">
-      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
-      	</div>
-      </form>
-            <div class="col-lg-11">
 
-               <!-- PANEL HEADLINE -->
-              <div class="panel panel-headline">
-                <div class="carousel-inner" role="listbox" style="text-align: center;">
-                  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ipb3.png');?>">
-                </div>
-                <div class="panel-body" align="center">
-                  <h3>IPB 3</h3>
-                  <h4>CCR - TL</h4>
-                </div>
-              </div>
-              <!-- END PANEL HEADLINE -->
-            </div>
+ <div class="main-content">
+<h3 class="page-title">Auditorium Toyib</h3>
 
-      
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
+  <h3>Dari berlin, lurus sampai sebelum media center</h3>
+</div>
+
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/toyib.png');?>">
+  <h3> Belok kanan, kemudian lurus sampai bertemu tulisan "Mahatan". Kemudian berbelok ke sebelah kanan Mahatan. </h3>
+</div>
+
+<div class="carousel-inner" role="listbox">
+  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/toyib 1.png');?>">
+  <h3>Naik tangga yang berada di sebelah kanan dan di situ lah Auditorium Toyib</h3>
+</div>
+
+ </div>
     </div>
     <!-- END MAIN -->
     <div class="clearfix"></div>

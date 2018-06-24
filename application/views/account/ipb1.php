@@ -40,19 +40,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="navbar-btn">
           <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
         </div>
-        <form class="navbar-form navbar-left">
-          <div class="input-group">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-          </div>
-        </form>
+        
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest!</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
-                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
+                <li><a href="<?php echo ('login');?>"><span>Log In </span></a></li>
+                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
               </ul>
             </li>
           </ul>
@@ -89,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('login');?>" class="">
+                    <a href="<?php echo ('parkir');?>" class="">
                       <h4> Parking Lot </h4>
                     </a>
                   </li>
@@ -109,6 +104,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="main-content">
         <div class="container-fluid">
           <h3 class="page-title">Maps</h3>
+       <form action="" method="post" class="navbar-form navbar-left">
+      	<div class="input-group">
+      		<input class="form-control" type="text" placeholder="Search...">
+      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
+      	</div>
+      </form>
             <div class="col-lg-11">
 
               <!-- PANEL HEADLINE -->
@@ -123,13 +124,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
               <!-- END PANEL HEADLINE -->
             </div>
-
-            <p><div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search...">
-                    <span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
-                  </div>
-                </p>
-
 
           <div class="row">
             <div class="col-md-4">

@@ -40,19 +40,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="navbar-btn">
           <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
         </div>
-        <form class="navbar-form navbar-left">
-          <div class="input-group">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-          </div>
-        </form>
+       
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi, Guest</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
-                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
+                <li><a href="<?php echo ('login');?>"><span>Log In</span></a></li>
+                <li><a href="<?php echo ('register');?>"><span>Sign Up</span></a></li>
               </ul>
             </li>
           </ul>
@@ -96,8 +91,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </ul>
               </div>
             </li>
-            <li><a href="<?php echo ('schedule');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
-            <li><a href="<?php echo ('activity');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
+            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+            <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>
@@ -111,12 +106,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus.png');?>">
-  <p>penjelasan....</p>
+  <h3>Dari berlin lurus menuju media center, sebelum media center ada belokan</h3>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/pinus 1.png');?>">
-  <p>penjelasan....</p>
+  <h3>Sebelum media center belok kanan, di sebelah kanan itulah RK PINUS</h3>
 </div>
 
  </div>

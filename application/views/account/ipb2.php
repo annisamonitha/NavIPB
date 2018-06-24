@@ -38,12 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="navbar-btn">
           <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
         </div>
-        <form class="navbar-form navbar-left">
-          <div class="input-group">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-          </div>
-        </form>
+        
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -95,6 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
             </li>
             <li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Schedule</span></a></li>
+			<li><a href="<?php echo ('login');?>" class=""><i class="lnr lnr-list"></i> <span>Activity</span></a></li>
           </ul>
         </nav>
       </div>
@@ -102,6 +98,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
+    <!-- MAIN CONTENT -->
+      
+      <div class="main-content">
+        <div class="container-fluid">
+          <h3 class="page-title">Maps</h3>
+      <form action="" method="post" class="navbar-form navbar-left">
+      	<div class="input-group">
+      		<input class="form-control" type="text" placeholder="Search...">
+      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
+      	</div>
+      </form>
+            <div class="col-lg-11">
+
+            <!-- PANEL HEADLINE -->
+              <div class="panel panel-headline">
+                <div class="carousel-inner" role="listbox" style="text-align: center;">
+                  <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ipb2.png');?>">
+                </div>
+                <div class="panel-body" align="center">
+                  <h3>IPB 2</h3>
+                  <h4>FKH - FPIK - FAPET - FMIPA Baru - FEM Baru</h4>
+                </div>
+              </div>
+              <!-- END PANEL HEADLINE -->
+            </div>
+
       
     </div>
     <!-- END MAIN -->

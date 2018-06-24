@@ -40,12 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="navbar-btn">
           <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
         </div>
-        <form class="navbar-form navbar-left">
-          <div class="input-group">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-          </div>
-        </form>
+        
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -65,31 +60,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('homeguest');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
               <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
                 <ul class="nav">
                   <li>
-                    <a href="<?php echo ('ipb1');?>" class="">
+                    <a href="<?php echo ('ipb1user');?>" class="">
                       <h4> IPB 1 </h4>
                       <p><h6> FAPERTA - FAHUTAN - FATETA - FMIPA - FEM - FEMA </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('ipb2');?>" class="">
+                    <a href="<?php echo ('ipb2user');?>" class="">
                       <h4> IPB 2 </h4>
                       <p><h6> FKH - FPIK - FAPET - FMIPA Baru - FEM Baru </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('ipb3');?>" class="">
+                    <a href="<?php echo ('ipb3user');?>" class="">
                       <h4> IPB 3 </h4>
                       <p><h6> CCR - TL </h6></p>
                     </a>
                   </li>
                   <li>
-                    <a href="<?php echo ('parkir');?>" class="">
+                    <a href="<?php echo ('parkiruser');?>" class="">
                       <h4> Parking Lot </h4>
                     </a>
                   </li>
@@ -106,9 +101,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- MAIN -->
     <div class="main">
       <!-- MAIN CONTENT -->
+      
       <div class="main-content">
         <div class="container-fluid">
           <h3 class="page-title">Maps</h3>
+      <form action="<?php echo (''); ?>" method="post" class="navbar-form navbar-left">
+      	<div class="input-group">
+      		<input class="form-control" type="text" placeholder="Search...">
+      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
+      	</div>
+      </form>
             <div class="col-lg-11">
 
               <!-- PANEL HEADLINE -->
@@ -124,11 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <!-- END PANEL HEADLINE -->
             </div>
 
-            <p><div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search...">
-                    <span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
-                  </div>
-                </p>
+            
 
 
           <div class="row">
@@ -142,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/gkafix.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('gka');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('gkauser');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END GKA -->
@@ -157,7 +155,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/pinus1.png');?>">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('pinus1');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('pinus1user');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END pinus 1 -->
@@ -172,7 +170,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <img class="card-img-top" src="https://lh5.googleusercontent.com/-sMU5YVSJrnQ/TyivjqFKShI/AAAAAAAAJoQ/jSDYfQXO3Z0/s980/IPB3.jpg" width="300" height="200">
                 </div>
                 <div class="panel-body" align="center">
-              <a class="btn btn-primary" href="<?php echo ('toyib');?>" title="See More"><span>See More</span></a>
+              <a class="btn btn-primary" href="<?php echo ('toyibuser');?>" title="See More"><span>See More</span></a>
                 </div>
               </div>
               <!-- END pinus 2 -->
