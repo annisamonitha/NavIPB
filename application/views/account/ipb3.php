@@ -106,8 +106,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <h3 class="page-title">Maps</h3>
       <form action="" method="post" class="navbar-form navbar-left">
       	<div class="input-group">
-      		<input class="form-control" type="text" placeholder="Search...">
-      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
+      		<input class="form-control" type="text" id="search" placeholder="Search...">
+          <input class="btn btn-primary" id="button" type="button" value="Go!">
+          <ul id="result"></ul>
       	</div>
       </form>
             <div class="col-lg-11">
@@ -378,6 +379,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <script src="<?php echo base_url('assets/home1/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js');?>"></script>
   <script src="<?php echo base_url('assets/home1/assets/vendor/chartist/js/chartist.min.js');?>"></script>
   <script src="<?php echo base_url('assets/home1/assets/scripts/klorofil-common.js');?>"></script>
+
 </body>
 
 </html>
