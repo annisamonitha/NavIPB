@@ -111,18 +111,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ccrdpn2.png');?>">
-  <h3>ket.</h3>
+  <h3>Jika kamu masuk dari lobby depan, belok kiri setelah pintu masuk kemudian belok kanan.</h3>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/ccrblkg2.png');?>">
-  <h3> ket. </h3>
+  <h3>Jika kamu masuk dari lobby belakang, belok kanan setelah pintu masuk kemudian belok kiri.</h3>
 </div>
 
 <div class="carousel-inner" role="listbox">
   <img class="d-block img-fluid" src="<?php echo base_url('assets/maps/1.07.png');?>">
-  <h3>ket. </h3>
-  <h3>ket. </h3>
+  <h3>Jika kamu dari lobby depan, setelah belok kanan kemudian belok kiri, tetap lurus. Ruangan paling ujung di sebelah kanan itulah ruangan RK CCR 1.07</h3>
+  <h3>Jika kamu dari lobby belakang, setelah belok kiri kemudian belok kanan, tetap lurus. Ruangan paling ujung di sebelah kanan itulah ruangan RK CCR 1.07</h3>
 </div>
 
 
