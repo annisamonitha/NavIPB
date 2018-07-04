@@ -105,6 +105,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="container-fluid">
           <h3 class="page-title">Maps</h3>
       <form action="" method="post" class="navbar-form navbar-left">
+
       	<div class="input-group">
             <input class="form-control" type="text" id="search" placeholder="Search...">
       		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>

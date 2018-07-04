@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock</title>
+
+  <link rel="stylesheet" type="text/css" href="jqClock.css" />
+  
+  <script src="jquery.js"></script>
+  <script src="jqClock.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){    
+      $("#jam").clock({"format":"24","calendar":"false"});
+    });    
+  </script>
+</head>
+
+<body>
+    <div id="jam"></div>
+</body>
+</html>

@@ -6,5 +6,6 @@ class Homeguest extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('account/homeguest');
-	}
+
+}
 }

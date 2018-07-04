@@ -103,6 +103,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
+      <div class="panel panel-headline">
+                <div class="carousel-inner" role="listbox" style="text-align: center;">
+                  <img class="d-block img-fluid" src="<?php echo base_url('assets/beranda/img/foto_beranda.png')?>" width="624" height="326">
+                </div>
+        </div>
+     
+     <div class="row">
+          <div class="col-lg-8">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"> Welcome to NavIPB</h3>
+              </div>
+              <div class="panel-body">
+                <h3>NavIPB adalah Website yang dibuat untuk memudahkan warga IPB maupun masyarakat yang sedang berkunjung dalam pencarian ruangan di IPB.</h3>
+                <div id="morris-chart-area"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock-o"></i> Most Popular Place</h3>
+              </div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="<?php echo ('toyibuser');?>" class="list-group-item">
+                    <span class="badge">IPB 1</span>
+                    Auditorium Toyib
+                  </a>
+                  <a href="<?php echo ('gkauser');?>" class="list-group-item">
+                    <span class="badge">IPB 1</span>
+                    GKA
+                  </a>
+                  <a href="<?php echo ('auditccruser');?>" class="list-group-item">
+                    <span class="badge">IPB 3</span>
+                    Auditorium CCR
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
       
     </div>
     <!-- END MAIN -->
