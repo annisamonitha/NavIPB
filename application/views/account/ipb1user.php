@@ -105,12 +105,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="main-content">
         <div class="container-fluid">
           <h3 class="page-title">Maps</h3>
-      <form action="<?php echo (''); ?>" method="post" class="navbar-form navbar-left">
-      	<div class="input-group">
-      		<input class="form-control" type="text" placeholder="Search...">
-      		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
-      	</div>
-      </form>
+          	<form class="navbar-form navbar-left">
+            	<div class="input-group">
+                	<input type="text" value="" name="keyword" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+                </div>
+            </form>
             <div class="col-lg-11">
 
               <!-- PANEL HEADLINE -->
@@ -126,15 +126,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <!-- END PANEL HEADLINE -->
             </div>
 
-            
-
-
           <div class="row">
             <div class="col-md-4">
               <!-- GKA -->
               <div class="panel">
                 <div class="panel-heading">
-                  <h3 class="panel-title">GKA (Gedung Kuliah A)</h3>
+                  <h3 class="panel-title">GKA (Gedung Kuliah A</h3>
                 </div>
                 <div class="carousel-inner" style="text-align: center;">
                   <img class="card-img-top" src="<?php echo base_url('assets/maps/gkafix.png');?>">

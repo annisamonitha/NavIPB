@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-  <title>Maps | NavIPB</title>
+  <title>Maps - Parkir | NavIPB</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -103,10 +103,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       
       <div class="main-content">
         <div class="container-fluid">
-          <h3 class="page-title">Maps</h3>
+          <h3 class="page-title">Parkir</h3>
       <form action="" method="post" class="navbar-form navbar-left">
       	<div class="input-group">
-      		<input class="form-control" type="text" placeholder="Search...">
+      		<input class="form-control" type="text" name="keyword" placeholder="Search...">
       		<span class="input-group-btn"><button class="btn btn-primary" type="button">Go!</button></span>
       	</div>
       </form>

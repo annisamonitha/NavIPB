@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-  <title>Home | NavIPB</title>
+  <title>Profile | NavIPB</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -42,11 +42,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="<?php echo ('profile');?>"><span>My Profile</span></a></li>
-                <li><a href="<?php echo ('login/logout');?>"><span>Log Out</span></a></li>
-              </ul>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Hi! <?php echo ucfirst($this->session->userdata('username')); ?></span></a>
+              
             </li>
           </ul>
         </div>
@@ -58,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="sidebar-scroll">
         <nav>
           <ul class="nav">
-            <li><a href="<?php echo ('dashboard');?>" class="active"><i class="lnr lnr-home"></i> <span>Home</span></a></li>
+            <li><a href="<?php echo ('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Home</span></a></li>
             <li>
               <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-map"></i> <span>Maps</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
               <div id="subPages" class="collapse ">
@@ -98,45 +95,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- END LEFT SIDEBAR -->
     <!-- MAIN -->
     <div class="main">
-      <div class="panel panel-headline">
-      	<div class="carousel-inner" role="listbox" style="text-align: center;">
-        	<img class="d-block img-fluid" src="<?php echo base_url('assets/beranda/img/foto_beranda.png')?>" width="624" height="326">
-        </div>
+    	<!-- MAIN CONTENT -->
+        <div class="main-content">
+      	<div class="container-fluid">
+                <h1 class="page-title">My Biodata</h1>
         </div>
      
      <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-lg-8">
             <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"> Welcome to NavIPB</h3>
-              </div>
-              <div class="panel-body">
-                <h3>NavIPB adalah Website yang dibuat untuk memudahkan warga IPB maupun masyarakat yang sedang berkunjung dalam pencarian ruangan di IPB.</h3>
+                <table class="table table-user-information">
+                	<colgroup>
+                    	<col class="col-xs-1">
+                        <col class="col-xs-6">
+                	</colgroup>
+                    <tr>
+                    	<td style="font-weight:bold">Nama</td>
+                        <td>:</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                    	<td style="font-weight:bold">Username</td>
+                        <td>:</td>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                     	<td style="font-weight:bold">Email</td>
+                        <td>:</td>
+                        <td> </td>
+                     </tr>
+                 </table>
+
                 <div id="morris-chart-area"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-clock-o"></i> Most Popular Place</h3>
-              </div>
-              <div class="panel-body">
-                <div class="list-group">
-                  <a href="<?php echo ('toyibuser');?>" class="list-group-item">
-                    <span class="badge">IPB 1</span>
-                    Auditorium Toyib
-                  </a>
-                  <a href="<?php echo ('gkauser');?>" class="list-group-item">
-                    <span class="badge">IPB 1</span>
-                    GKA
-                  </a>
-                  <a href="<?php echo ('auditccruser');?>" class="list-group-item">
-                    <span class="badge">IPB 3</span>
-                    Auditorium CCR
-                  </a>
-                </div>
-              </div>
+              
             </div>
           </div>
           </div>

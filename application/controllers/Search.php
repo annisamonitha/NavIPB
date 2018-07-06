@@ -8,14 +8,14 @@ class Search extends CI_Controller {
 		$this->load->model('Search_model');
 		$this->load->helper('form');  
     } 
-	public function keyword(){
-		$key=$this->input->post('');
-		$data['database']=$this->Search_model->search($key);
-		$this->load->view('account/ipb1user');
+	public function cari(){
+		$keyword=$this->input->post('keyword');
+		$data['searching']=$this->Search_model->get_search_keyword($keyword);
+		$this->load->view('account/ipb1user', $data);
 	} 
 
     public function index() {
-		$data['database']=this->Search_model->cari_data()->result(); 
-        $this->load->view('account/ipb1user');  
+		$data['searching']=$this->Search_model->get_all(); 
+        $this->load->view('account/ipb1user', $data);  
     }
 }  
